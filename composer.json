@@ -1,6 +1,6 @@
 {
-    "name": "slim/slim-skeleton",
-    "description": "A Slim Framework skeleton application for rapid development",
+    "name": "systemico/slimphp",
+    "description": "Slim Rest Api framework for rapid development.",
     "keywords": [
         "microframework",
         "rest",
@@ -19,6 +19,11 @@
             "name": "Pierre Berube",
             "email": "pierre@lgse.com",
             "homepage": "http://www.lgse.com/"
+        },
+        {
+          "name": "Edwin Ariza",
+          "email": "me@edwinariza.com",
+          "homepage": "https://www.edwinariza.com"
         }
     ],
     "require": {

@@ -40,3 +40,13 @@ composer test
 ```
 
 That's it! Now go build something cool.
+
+## Correr Docker 
+
+Correr el siguiente comando para levantar el contenedor de Docker
+
+```bash
+docker-compose build && docker-compose up -d
+```
+
+lo cual generará la creación de dos contenedores 1) con php y apache para correr el ws, el cual corre por el puerto 8094, 2) con mysql, el cual puede levantar un contenedor con una base de datos especificada en un .sql, este corre por el puerto 3306.

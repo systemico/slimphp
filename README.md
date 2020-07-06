@@ -1,52 +1,39 @@
 # Systemico SlimPHP
 
-[![Coverage Status](https://coveralls.io/repos/github/slimphp/Slim-Skeleton/badge.svg?branch=master)](https://coveralls.io/github/slimphp/Slim-Skeleton?branch=master)
+Utiliza está aplicación para crear aplicaciones PHP enfocadas a micro servicios.
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 4 application. This application uses the latest Slim 4 with Slim PSR-7 implementation and PHP-DI container implementation. It also uses the Monolog logger.
+## Crear un pryecto nuevo.
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
-
-## Install the Application
-
-Run this command from the directory in which you want to install your new Slim Framework application.
+Ejecuta el siguiente comando:
 
 ```bash
-composer create-project slim/slim-skeleton [my-app-name]
+composer create-project systemico/slimphp [nombre_app]
 ```
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
+Reemplace `[nombre_app]` con el nombre de la aplicación que desea crear:
 
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writable.
+* El punto de arranque de la apliacón es el directorio `/src/public/` .
+* Si se presentá alguna situación debes revisar el directorio `/src/logs/`.
 
-To run the application in development, you can run these commands
+Para correr la aplicación en modo desarrollo utiliza el siguiente comando:
 
 ```bash
-cd [my-app-name]
+cd [nombre_app]
 composer start
 ```
 
-Or you can use `docker-compose` to run the app with `docker`, so you can run these commands:
+Si requieres trabajar con una base de datos utiliza `docker-compose`para correr el contenedor `docker`, para esto ejecuta el comando:
 ```bash
 cd [my-app-name]
 docker-compose up -d
+docker-compose build && docker-compose up -d
 ```
-After that, open `http://localhost:8080` in your browser.
+Eso creará un servicio disponible en `http://localhost:8080` y lo podrás ejecutar en tu navegador de preferencia.
 
-Run this command in the application directory to run the test suite
+Para correr el modelo de pruebas ejecuta el comando:
 
 ```bash
 composer test
 ```
 
-That's it! Now go build something cool.
-
-## Correr Docker 
-
-Correr el siguiente comando para levantar el contenedor de Docker
-
-```bash
-docker-compose build && docker-compose up -d
-```
-
-lo cual generará la creación de dos contenedores 1) con php y apache para correr el ws, el cual corre por el puerto 8094, 2) con mysql, el cual puede levantar un contenedor con una base de datos especificada en un .sql, este corre por el puerto 3306.
+Así de sencillo es!, buena suerte.

@@ -1,7 +1,7 @@
 {
     "name": "systemico/slimphp",
     "description": "Slim Rest Api framework for rapid development.",
-    "version": "4.2",
+    "version": "4.2.1",
     "keywords": [
         "microframework",
         "rest",
@@ -48,7 +48,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "/"
         }
     },
     "autoload-dev": {

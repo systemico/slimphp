@@ -19,6 +19,7 @@ Para correr la aplicación en modo desarrollo utiliza el siguiente comando:
 
 ```bash
 cd [nombre_app]
+cd application
 composer start
 ```
 

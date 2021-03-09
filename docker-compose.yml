@@ -3,7 +3,7 @@ services:
     ws:
       image: apache
       build: .
-      container_name: slimphp
+      container_name: slimphp-container
       ports:
         - "8094:80"
       volumes:
@@ -11,7 +11,7 @@ services:
       network_mode: bridge
     bd:
       image: mariadb:latest
-      build: 
+      build:
         context: data/mysql/
         dockerfile: dockerfile
       container_name: db_slim
